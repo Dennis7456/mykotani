@@ -7,3 +7,8 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
   functions.logger.info("Hello logs!", {structuredData: true});
   response.send("Hello from Firebase!");
 });
+
+exports.login = functions.https.onRequest((request, response) => {
+  functions.logger.info("Login logs", {structuredData: true});
+  response.send("Login route");
+});
